@@ -1,0 +1,12 @@
+.flex-container{display: flex;}
+
+.logocontainer p {font-family: Verdana;
+font-size: 14px;
+font-weight: bold;
+color: MediumAquamarine;}
+
+.flex-container a {font-family: Verdana;
+font-size: 14px;
+font-weight: bold;
+color: black;
+text-align: right;}
