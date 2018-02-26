@@ -1,12 +1,174 @@
-.flex-container{display: flex;}
+/* Universal Styles */
 
-.logocontainer p {font-family: Verdana;
-font-size: 14px;
-font-weight: bold;
-color: MediumAquamarine;}
+a {
+	color: black;
+}
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+/* Header */
 
-.flex-container a {font-family: Verdana;
-font-size: 14px;
+header {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: 1;
+	border-bottom: 1px solid black;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 14px;
+	height: 90px;
+	align-items: center;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	padding-left: 30px;
+}
+.logo span {
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	color: MediumAquamarine;
+	padding-left: 30px;
+}
+nav span {
+	display: inline-block;
+	padding: 20px 10px;
+}
+header span {
+	padding-right: 40px;
+}
+/* Main Content Container */
+
+.maincontent {
+	display: flex;
+	width: 1232px;
+	border: 1px solid black;
+	margin: 0 auto 78px auto;
+	padding-top: 120px;
+}
+/* First News Column */
+
+.columnlarge {
+	display: flex;
+  flex-wrap: wrap;
+	width: 630px;
+	border: 1px solid black;
+	align-items: center;
+}
+.image-content span {
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 40px;
+	color: white;
+	text-align: left;
+}
+.image-content {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+	height: 300px;
+}
+/* first story*/
+
+.fall-cancelledimage-content {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+	height: 300px;
+}
+.stories .text-content {
+	height: 250px;
+}
+.stories {
+	display: flex;
+	justify-content: space-between;
+}
+.story {
+	display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+	width: 300px;
+}
+.fall-cancelledimage-content span {
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+}
+.camera-guy span {
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+}
+.camera-guy {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+	height: 300px;
+}
+
+
+/* second story */
+
+
+.mediumcolumn{ display: flex;
+  align-items: flex-start;
+  width: 300px;
+margin-left: 30px;}
+
+.cat-image-content{background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+height: 250px;}
+
+.cat-image-content span{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+/* Third Column */
+
+.newsbitescolumn{display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  margin-left: 15px;
+}
+
+.cookiepic{ width: 240px;
+height: 240px;}
+
+.newsbitestext {
+  background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+    color: DimGray;
+}
+
+.newsbitestext p {
+border-bottom: 1px solid black;}
+
+/* Footer */
+
+.footer{
+  display: flex;
+  background-color: MediumAquamarine;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  font-size: 12px;
+}
+.footer-logo .title{ display: inline-block;
+  font-family: Georgia;
+font-size: 16px;
 font-weight: bold;
-color: black;
-text-align: right;}
+color: white;
+border-right: 2px solid white;
+padding-right: 15px;}
+
+.footer nav{display: inline-block;}
